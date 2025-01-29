@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f3dff1;
+}
+.mainContent {
+  display: block;
+  margin:6% 50% 0%  5%; 
+  background-color: #f2e8ef;
+  padding: 7px;
+  border: 1px solid #0e6d9d;
+}
+.content-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+  width: 50%;
+  gap: 10px;
+}
+label, .btn{
+  /* gap: 10px; */
+  margin-left: 35px;
+}
+ .btn {
+  padding: 7px;
+  width: 15%;
+  background-color: #0180ca;
+  color: #fff;
+  margin-left: 130px;
+  border-radius: 4px;
+ }
+
+ input[type="text"], input[type="password"],
+ input[type="confirmPassword"],
+ input[type="email"] {
+  padding: 3px;
+  line-height: 5px;
+  border-radius: 5px;
+ }
+
+
+ /* .ellipse {
+  position: absolute;
+  top: 53%;
+  left: 60%;
+  transform: translate(-50%, -50%); Center the ellipse */
+  /* border: 1px solid #1588fc;
+  width: 290px;
+  height: 340px;
+  border-radius: 50%; Creates the ellipse shape */
+  /* background: radial-gradient(circle, rgba(21, 130, 248, 0.1), rgba(10, 72, 133, 0.1)); /* Semi-transparent black */
+  /* opacity: 0;
+}
+
+.ellipse:hover {
+  visibility: visible;
+  color: #007AFF;
+}  */

@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", serif, sans-serif;
+  background-color: #fbfafa; 
+  height: 100%;
+  width: 100%;
+}
+.main-container {
+  display: flex;
+  height: 90%;
+  width: 980px;
+  margin: 3.5rem  10rem;
+  padding: 0px;
+}
+
+.logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  position: relative;
+  right: 2px;
+  margin: 19px 1px 0 0px;
+  padding: 5px;
+  /* border: 2px solid red; */
+  margin-left: 5px;
+}
+ .logo img {
+  margin-top: 10px;
+}
+ .logo h4 {
+  position: absolute;
+  top: 25px;
+  left: 40px;
+ }
+
+ .socialLeft {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-color: #007AFF;
+  color: #fff;
+  width: 90%;
+  height: 544px;
+  border: 2px solid #007AFF;
+  padding: 20px;
+}
+/* Social section */
+.socialLeft img {
+  margin: 25px 0 0 0px;
+  width: 250px;
+  height: 350px;
+}
+
+.socialLeft p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: -0.02em;
+  width:368x;
+  height: 60px;
+  margin-left: 20px;
+  padding-bottom: 10px;
+  font-size: 19px;
+  /* border: 2px solid red; */
+}
+
+/* .image-container {
+  position: relative; Position the image container relative to itself */
+/* } */
+/* Ellipse 2 */
+  
+.slide-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjusted as needed */
+  margin-right: 85px;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #449af6;
+  margin: 0 4px;
+}
+
+.dot.active {
+  background-color: #fff;
+}
+
+ .formGroup {
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  min-height: 149px;
+  width: 85rem;
+  border: 2px solid #fff;
+}
+
+.form-container {
+  /* width: 538px; */
+  height: 150px;
+  display: inline-block;
+  flex-grow: 0;
+} 
+/* Create Account on top of the form */
+.create {
+  margin-top: 8px ;
+  padding: 5px;
+  margin-left: 7px;
+}
+
+.create h3{
+  font-size: 19.7px;
+  font-weight: 600;
+  line-height: 27px;
+  margin-left: 7;
+}
+.create  p{
+  font-size: 9.5px;
+  margin-bottom: 5px;
+  font-weight: 400;
+  line-height: 13px;
+}
+
+/* Form Main section styling */
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 10px;
+  width: calc(55% - 5px);
+  gap: 6px;
+  font-size: 9.8px;
+  font-weight: 400;
+  justify-content: center;
+  align-items: center;
+  margin-left: 60px;
+}
+
+/* Hyper links */
+form a {
+  text-decoration: none;
+}
+
+.forget-pass {
+  font-size: 9.8px;
+  font-weight: 400;
+}
+.remember {
+  display: flex;
+  align-items: center;
+  /* margin-right: 9px; */
+  padding: 2px;
+  gap: 5px;
+}
+
+.forgetPass {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: -17px;
+}
+
+.consent {
+  display: flex;
+  align-items: centre;
+  justify-content: flex-start;
+  padding: 2px;
+  margin-right: 3px;
+  margin-top: 5px;
+  font-size: 9.8px;
+  /* border: 2px solid red; */
+}
+
+input[type="checkbox"] {
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 9px;
+  margin-top: 5px;
+}
+
+/* Create account section styling */
+.createAccount  {
+  background-color: blue;
+  width: 50%;
+  height: 33px;
+  border-radius: 4px;
+  margin: 10px 0 0 12px;
+}
+
+.createAccount p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #fff;
+  padding: 5px;
+  margin-top: 3px;
+}
+/* the Google sign-up section */
+.google-group {
+  display: flex;
+  /* flex-direction: row; */
+  /* justify-content: flex-start; */
+  gap: 23px;
+  /* min-width: 100%; */
+}
+
+.google-mail {
+  background-color: #2D3748;
+  width: 50%;
+  height: 33px;
+  border-radius: 4px;
+  margin: 10px 0 10px 0;
+}
+
+.google-mail p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 5px;
+  font-weight: 400;
+  line-height: 14px;
+  font-size: 10px;
+  position: relative;
+  bottom: -3.8px;
+}
+
+.google-mail  img{
+  position: absolute;
+  top: 419px;
+  margin-left: 6px;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="password"],
+input[type="confirmPassword"] 
+{
+    padding: 4px;
+    border: 1px solid #D1D1D1;
+    border-radius: 0.9px;
+    box-sizing: border-box;
+    line-height: 10px;
+    margin: 2px 10px 0px 0px;
+    width: 200px;
+}
+
+label {
+  margin: 2px 10px 0 12px;
+}
+
+.login {
+  margin-left: 140px;
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 13px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  width: calc(45% - 5px);
+  gap: 10px;
+  max-width: 100%;
+  margin-top: 85px;
+  border-radius: 5px;
+}
+
+.icons img {
+  height:22px;
+  width: 100%;
+  margin-left: 10px;
+}
+
+/* Specific Mobile Styles for 478px and below */
+@media (max-width: 478px) {  /* Target screens 478px and smaller */
+  .main-container {
+      width: 90%;
+      margin: 1rem auto;
+      flex-direction: column; /* Stack elements */
+      height: auto;
+  }
+
+  .formGroup {
+      width: 90%;
+      margin: 1rem auto;
+  }
+
+  .subgroup {
+      width: 100%;
+      margin: 0;
+      display: block; /* Stack inputs */
+  }
+
+  .create {
+      text-align: center;
+  }
+
+  .form-container {
+      grid-template-columns: 1fr; /* Single column layout */
+      width: 100%;
+      gap: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  input[type="password"],
+  input[type="confirmPassword"] {
+      width: calc(100% - 12px); /* Full width inputs */
+      margin: 5px 0;
+  }
+
+  label {
+      margin: 5px 0;
+  }
+
+  .remember {
+      margin: 10px 0;
+  }
+
+  .forgetPass {
+      margin-top: 0;
+      text-align: right;
+  }
+
+  .createAccount {
+      width: 100%;
+      margin: 10px 0;
+  }
+
+  .google-group {
+      flex-direction: column; /* Stack buttons */
+      gap: 10px;
+  }
+
+  .google-mail {
+      width: 100%;
+      margin: 10px 0;
+  }
+
+  .icons {
+      flex-direction: row; /* Or column if you prefer */
+      margin: 20px auto;
+      width: 90%;
+      gap: 10px;
+  }
+
+  .icons img {
+      margin: 0;
+  }
+
+  .login {
+      margin: 10px 0;
+      text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-container {
+      flex-direction: column; /* Stack elements vertically */
+      width: 90%; /* Adjust as needed */
+      margin: 1rem auto; /* Center the container */
+      height: auto; /* Let height adjust to content */
+  }
+
+  .socialLeft {
+      width: 100%;
+      height: auto; /* Let height adjust */
+      padding: 20px;
+  }
+
+  .socialLeft img {
+      margin: 20px auto; /* Center image */
+      width: 90%; /* Or a specific width */
+      height: auto;
+      display: block; /* Make image a block element */
+  }
+
+  .socialLeft p {
+      margin: 10px auto; /* Center text */
+      width: 90%; /* Or a specific width */
+      font-size: 1rem; /* Adjust font size as needed */
+  }
+
+  .formGroup {
+      width: 90%;
+      margin: 1rem auto;
+  }
+
+  .subgroup {
+      width: 100%;
+      margin: 0; /* Remove left margin */
+      display: block; /* Stack inputs */
+  }
+
+  .create { /* Styles for the "Create account" section */
+      text-align: center; /* Center the heading */
+      margin-bottom: 1rem; /* Add some spacing */
+  }
+
+  .create h3 {
+      font-size: 1.2rem;
+  }
+
+  .create p {
+      font-size: 0.8rem;
+  }
+
+  .form-container {
+      grid-template-columns: 1fr; /* Single column layout */
+      width: 100%;
+      gap: 10px;
+      font-size: 0.8rem; /* Adjusted font size */
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"], 
+  input[type="password"],
+  input[type="confirmPassword"] {
+      width: calc(100% - 12px); /* Full width inputs */
+      margin: 5px 0; /* Adjusted margins */
+      padding: 8px; /* Adjusted padding */
+      font-size: 1rem; /* Adjusted font size */
+  }
+
+  label {
+      margin: 5px 0;
+  }
+
+  .remember {
+      margin: 10px 0;
+      display: flex; /* Ensure checkbox and label are inline */
+      align-items: center; /* Vertically align checkbox and label */
+  }
+
+  .forgetPass {
+      margin-top: 0;
+      text-align: right;
+  }
+
+  .consent {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+  }
+
+  input[type="checkbox"] {
+      margin-right: 5px;
+  }
+
+  .createAccount {
+      width: 100%;
+      margin: 10px 0;
+  }
+
+  .google-group {
+      flex-direction: column; /* Stack buttons */
+      gap: 10px;
+  }
+
+  .google-mail {
+      width: 100%;
+      margin: 10px 0;
+  }
+
+  .google-mail img {
+      position: relative; /* Remove absolute positioning */
+      top: auto;
+      margin-left: 0;
+      margin-right: 10px; /* Add some spacing */
+  }
+
+  .icons {
+      flex-direction: row; /* Or column if you prefer */
+      margin: 20px auto;
+      width: 90%;
+      gap: 10px;
+  }
+
+  .icons img {
+      margin: 0;
+      width: auto; /* Or a specific width */
+      height: 2rem; /* Adjust height as needed */
+  }
+
+  .login {
+      margin: 10px 0;
+      text-align: center;
+  }
+
+  /* Add any other mobile-specific styles here */
+  .logo {
+      font-size: 1.5rem; /* Make logo smaller */
+      margin: 10px auto; /* Center logo */
+      text-align: center; /* Center logo text if needed */
+  }
+
+  .logo img {
+      margin: 0 auto; /* Center logo image */
+      display: block; /* Make logo image a block element */
+      max-width: 80%; /* Limit logo image width */
+      height: auto;
+  }
+
+  .logo h4 {
+      position: relative; /* Remove absolute positioning */
+      top: auto;
+      left: auto;
+      margin-top: 5px; /* Add some spacing */
+      text-align: center; /* Center logo text */
+  }
+}
+
+/* Desktop (typically screens larger than 1024px) */
+@media (min-width: 1024px) {
+    .main-container {
+        flex-direction: row; /* Back to row layout */
+        width: 980px; /* Or your desired fixed width */
+        margin: 3.5rem auto; /* Center the container */
+        height: 90%;
+    }
+
+    .socialLeft {
+        width: auto; /* Or your desired width */
+        height: 544px; /* Or auto if you want it to adjust */
+        padding: 20px;
+    }
+
+    .socialLeft img {
+        margin: 25px 0 0 50px; /* Or adjust as needed */
+        width: 250px; /* Or your desired width */
+        height: 350px; /* Or auto if you want it to adjust */
+    }
+
+    .socialLeft p {
+        margin: 20px 40px; /* Adjust as needed */
+        width: 370px; /* Or auto if you want it to adjust */
+        font-size: 19px;
+    }
+
+    .formGroup {
+        width: auto; /* Or your desired width */
+        /* other styles as needed */
+    }
+
+    .subgroup {
+        width: 428px; /* Or your desired width */
+        display: inline-block; /* Or flex if you prefer */
+        margin-left: 70px; /* Or adjust as needed */
+    }
+
+    .form-container {
+        grid-template-columns: repeat(2, 1fr); /* Back to two columns */
+        width: calc(55% - 5px); /* Or your desired width */
+        gap: 6px; /* Or your desired gap */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="password"],
+    input[type="confirmPassword"] {
+        width: 200px; /* Or your desired width */
+        margin: 2px 10px 0px 9px; /* Or adjust as needed */
+    }
+
+    /* ... other desktop-specific styles ... */
+    .login {
+        margin-left: 150px; /* Or adjust as needed */
+    }
+    .icons{
+        margin-top: 85px; /* Or adjust as needed */
+    }
+}
