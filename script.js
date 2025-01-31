@@ -4,7 +4,7 @@ document
   .addEventListener('submit', function (event) {
     event.preventDefault(); //To Prevent default form submission
 
-    // Basic validation (add more as needed)
+    // Basic validation (added as needed)
     const firstName = document.getElementById('firstName').value;
     const lastName = document.getElementById('lastName').value;
     const email = document.getElementById('email').value;
@@ -28,7 +28,7 @@ document
       alert('Please fill in all required fields.');
       return;
     }
-
+ 
     // If validation passes, pop up the actual submission logic)
     alert('Sign-up Successful!');
     this.reset(); // Clear the form
